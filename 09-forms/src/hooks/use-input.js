@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useReducer } from "react";
 
 const initialInputState = {
   value: "",
@@ -7,7 +7,7 @@ const initialInputState = {
 
 const InputStateReducer = (state, action) => {
   if (action.type === "INPUT") {
-    return { avlue: action.value, isTouched: state.isTouched };
+    return { value: action.value, isTouched: state.isTouched };
   }
   if (action.type === "BLUR") {
     return { isTouched: true, value: state.value };
