@@ -1,6 +1,10 @@
+import PageContent from "./PageContent"
+
 function HomePage() {
     return <>
-        <h1>HomePage</h1>
+        <PageContent title="welcome">
+            <p>Browse all our amazing events!</p>
+        </PageContent>
     </>
 }
 
