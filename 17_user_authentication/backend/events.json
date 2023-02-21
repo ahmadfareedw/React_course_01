@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"The Last of Us","image":"https://superggradio.files.wordpress.com/2020/06/lou.jpg","date":"2023-02-01","description":"One of the best games!","id":"9633ed7d-0440-4c29-a5f9-3e65feec04e6"},{"title":"A new event","image":"https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"}],"users":[{"email":"test@test.com","password":"$2a$12$2lo3X1rjdI8v.LE2DPTTwOLwbPpakufs1iIHfz/RUaUg1FyWwmIw2","id":"ac9cb40c-e90c-4ef9-9c9a-92d5d3172a21"},{"email":"test2@test.com","password":"$2a$12$RWk24G3HCMrHkIJLjkZ3J.lvk5NCRVk9yGQjUSMFkZF64e8lfwsiW","id":"8d6db380-6454-4f15-961b-5fe7e97ed227"}]}
