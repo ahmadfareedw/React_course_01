@@ -1,5 +1,6 @@
 import React from 'react';
-import { useProductsCtx } from '../../context/products-context';
+import { useStore } from '../../hooks-store/store';
+// import { useProductsCtx } from '../../context/products-context';
 // import { useDispatch } from 'react-redux';
 
 import Card from '../UI/Card';
@@ -7,12 +8,14 @@ import './ProductItem.css';
 // import { toggleFav } from '../../store/actions/products';
 
 const ProductItem = props => {
+  const dispatch = useStore(false)[1];
   // const dispatch = useDispatch();
-  const toggleFav = useProductsCtx().toggleFav;
+  // const toggleFav = useProductsCtx().toggleFav;
 
   const toggleFavHandler = () => {
     // dispatch(toggleFav(props.id));
-    toggleFav(props.id)
+    // toggleFav(props.id)
+    dispatch('TOGGLE_FAV', props.id)
   };
 
   return (

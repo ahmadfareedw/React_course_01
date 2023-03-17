@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 // import { Provider } from 'react-redux';
 // import { combineReducers, createStore } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -7,7 +7,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 // import productReducer from './store/reducers/products';
-import ProductsPprovider from './context/products-context';
+// import ProductsPprovider from './context/products-context';
+import configureProductStore from './hooks-store/products-store';
 
 // const rootReducer = combineReducers({
 //   shop: productReducer
@@ -15,11 +16,13 @@ import ProductsPprovider from './context/products-context';
 
 // const store = createStore(rootReducer);
 
+configureProductStore();
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ProductsPprovider>
+  // <ProductsPprovider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </ProductsPprovider>
+  // </ProductsPprovider>
 );
